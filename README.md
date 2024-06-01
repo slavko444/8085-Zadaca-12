@@ -50,7 +50,9 @@ POLNI_TIMER:MVI A,10111110 ;62d+128d(краток импулс)=190
  MVI A,11XXXXXX ;се стартува тајмерот
  OUT CSR
  RET
+```
 Главна Програма:
+```
 MVI А, X0X01111b ; маскирај ги сите прекини.
 SIM
 MVI H,0 ;бројач на бајти.
@@ -116,6 +118,6 @@ To run the program, you need an 8085 emulator or assembler. You can use emulator
 
 1. Download and install 8085 simulator from [here](https://github.com/8085simulator/8085simulator.github.io?tab=readme-ov-file).
 2. Clone this repository to your local machine.
-3. Open e8085.exe and load the `Zadaca 12 code.asm` file.
+3. Open e8085.exe and load the `Zadaca 12 code.asm`,`Zadaca 12 code glavna.asm` file.
 4. Assemble the code by pressing the Assemble button.
 5. Run the program by pressing the Run button or by pressing F10.
